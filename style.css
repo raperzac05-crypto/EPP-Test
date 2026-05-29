@@ -428,7 +428,7 @@ body.light-mode .resume-section {
 .exp-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 4px;
     margin-bottom: 6px;
