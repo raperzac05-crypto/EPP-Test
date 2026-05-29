@@ -474,3 +474,16 @@ body.light-mode .exp-bullets li {
     font-weight: bold;
     color: rgb(211, 175, 55); /* your gold accent */
 }
+
+.exp-title-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
+}
