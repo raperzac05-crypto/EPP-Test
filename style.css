@@ -464,7 +464,7 @@ body.light-mode .exp-bullets li {
 }
 
 .exp-bullets li::before {
-    content: '–';
+    content: '-';
     position: absolute;
     left: 0;
     color: #38bdf8;
