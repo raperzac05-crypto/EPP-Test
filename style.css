@@ -69,6 +69,141 @@ section {
     color: #ffffff;
 }
 
+/* ===== FADE ANIMATION ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== THEME TOGGLE ===== */
+.theme-toggle {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    background: #38bdf8;
+    color: #020617;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== LIGHT MODE ===== */
+body.light-mode {
+    background: #f8fafc;
+    color: #020617;
+}
+
+body.light-mode nav {
+    background: #e2e8f0;
+}
+
+body.light-mode nav a,
+body.light-mode .contact-icons a {
+    color: #020617;
+}
+
+body.light-mode .project-card,
+body.light-mode .experience-card {
+    background: #e2e8f0;
+}
+
+body.light-mode .hero p,
+body.light-mode .role,
+body.light-mode .date {
+    color: #475569;
+}
+
+body.light-mode .location {
+    color: #334155;
+}
+
+body.light-mode .contact-icons a:hover {
+    color: #38bdf8;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    body {
+        padding-top: 90px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 18px;
+        font-size: 14px;
+    }
+
+    .theme-toggle {
+        position: static;
+        margin-top: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 40px 18px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .about-text h2 {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-highlight {
+        font-size: 20px;
+    }
+
+    .about-image img {
+        width: 260px;
+        max-width: 100%;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .date {
+        white-space: normal;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .full-width {
+        max-width: 100%;
+    }
+
+    .form-group label {
+        font-size: 22px;
+    }
+}
+
 /* ===== ABOUT ===== */
 .about-container {
     display: flex;
@@ -102,18 +237,6 @@ section {
     width: 350px;
     border-radius: 12px;
     object-fit: cover;
-}
-
-/* ===== FADE ANIMATION ===== */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* ===== CONTACT FORM ===== */
